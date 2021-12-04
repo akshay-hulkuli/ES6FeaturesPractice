@@ -7,7 +7,7 @@ const myPromise = (a) => {
             else {
                 reject("failed process, got odd number")
             }
-        })
+        },1000)
     })
 }
 
@@ -21,5 +21,6 @@ data.forEach((key) => {
     }).catch((e)=>{
         console.log(e);
     });
+    console.log("data is sent")
 })
 
